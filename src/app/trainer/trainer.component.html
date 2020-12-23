@@ -1,0 +1,7 @@
+<button mat-flat-button color="accent" [disabled]="isConnectDisabled" (click)="onConnectClick()">{{ connectButtonText }}</button>
+<h2>Wheel revs</h2>
+{{ lastWheelRevolutionCount }}
+<h2>Crank revs</h2>
+{{ lastCrankRevolutionCount }}
+<h2>Current speed (based on 700c wheel size)</h2>
+{{ currentSpeed | number:'1.1-1' }}
